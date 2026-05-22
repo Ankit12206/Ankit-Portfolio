@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANKIT SHUKLA — Season 04 Brutalist Portfolio</title>
+  <meta name="description" content="Portfolio of Ankit Shukla - BCA Student, Python/C++ Explorer, DSA & AI Enthusiast. Designed in a luxury editorial modern brutalist aesthetic.">
+  
+  <!-- Fontshare Clash Grotesk and General Sans -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@500;600;700&f[]=general-sans@400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Font Space Mono for code/technical typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Persistent Texture Overlay (fractalNoise) -->
+  <div class="noise-overlay" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <filter id="noise-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" result="noise" />
+        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" />
+        <feComposite operator="in" in2="SourceGraphic" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noise-filter)" />
+    </svg>
+  </div>
+
+  <!-- Custom Brutalist Cursor -->
+  <div class="custom-cursor" id="js-cursor" aria-hidden="true"></div>
+
+  <!-- Sticky Header Navigation -->
+  <header class="main-header" id="js-header">
+    <div class="header-logo" id="js-header-logo">ANKIT SHUKLA</div>
+    <nav class="header-nav">
+      <a href="#hero" class="nav-link">HOME</a>
+      <a href="#manifesto" class="nav-link">MANIFESTO</a>
+      <a href="#projects" class="nav-link">PROJECTS</a>
+      <a href="#credentials" class="nav-link">CREDENTIALS</a>
+    </nav>
+    <div class="header-socials">
+      <a href="#" target="_blank" rel="noopener noreferrer" class="nav-link" id="js-linkedin-link">LINKEDIN</a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="nav-link" id="js-github-link">GITHUB</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-background" id="js-hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-headline-container">
+          <h1 class="hero-headline text-reveal">
+            <span class="line-1">ANKIT SHUKLA</span>
+            <span class="line-2" id="js-hero-subtitle">DEVELOPER / AI</span>
+          </h1>
+        </div>
+        
+        <div class="hero-footer-border"></div>
+        <div class="hero-metadata-grid">
+          <div class="meta-item monospace">
+            <span class="meta-label">ROLE /</span>
+            <span class="meta-value" id="js-hero-meta-role">BCA STUDENT & DEV</span>
+          </div>
+          <div class="meta-item monospace">
+            <span class="meta-label">LOC /</span>
+            <span class="meta-value" id="js-hero-meta-loc">KANPUR, UP, IN</span>
+          </div>
+          <div class="meta-item monospace">
+            <span class="meta-label">COORD /</span>
+            <span class="meta-value" id="js-hero-meta-coord">26.4499° N, 80.3319° E</span>
+          </div>
+          <div class="hero-cta-wrapper">
+            <a href="#projects" class="cta-button">
+              EXPLORE PROJECTS
+              <span class="cta-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto-section grid-12">
+      <div class="manifesto-label-col col-1-4">
+        <span class="section-label uppercase monospace" id="js-manifesto-label">MANIFESTO</span>
+      </div>
+      <div class="manifesto-content-col col-5-12">
+        <p class="manifesto-text text-reveal" id="js-manifesto-text">
+          <!-- Populated dynamically via app.js -->
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Divider -->
+    <section class="section-divider">
+      <h2 class="divider-title uppercase" id="js-projects-divider-title">PROJECTS</h2>
+    </section>
+
+    <!-- Dynamic Project Grid Section -->
+    <section id="projects" class="projects-section grid-12" id="js-projects-grid">
+      <!-- Populated dynamically via app.js -->
+    </section>
+
+    <!-- Credentials Divider -->
+    <section class="section-divider">
+      <h2 class="divider-title uppercase">CREDENTIALS</h2>
+    </section>
+
+    <!-- Credentials Section -->
+    <section id="credentials" class="credentials-section grid-12">
+      <div class="credentials-col col-1-4">
+        <h3 class="credentials-header uppercase">EDUCATION</h3>
+        <div id="js-education-container" class="credentials-list">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+
+      <div class="credentials-col col-5-8">
+        <h3 class="credentials-header uppercase">CERTIFICATIONS</h3>
+        <div id="js-certifications-container" class="credentials-list">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+
+      <div class="credentials-col col-9-12">
+        <h3 class="credentials-header uppercase">TECHNICAL SKILLS</h3>
+        <div id="js-skills-container" class="skills-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact Section -->
+  <footer class="footer-section">
+    <div class="footer-grid grid-12">
+      <div class="footer-col col-1-4">
+        <h4 class="footer-col-header uppercase">CONTACT DIRECT</h4>
+        <p class="footer-detail monospace" id="js-footer-email">EMAIL: ankitshukla12206@gmail.com</p>
+        <p class="footer-detail monospace" id="js-footer-phone">PHONE: +91 9235220655</p>
+        <p class="footer-detail monospace" id="js-footer-address">ADDR: Sidharth Nagar, Gooba Garden, Kalyanpur, Kanpur</p>
+      </div>
+
+      <div class="footer-col col-5-8">
+        <h4 class="footer-col-header uppercase">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">BACK TO TOP</a></li>
+          <li><a href="#manifesto" class="footer-link">MANIFESTO</a></li>
+          <li><a href="#projects" class="footer-link">PROJECTS</a></li>
+          <li><a href="#credentials" class="footer-link">CREDENTIALS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col col-9-12">
+        <h4 class="footer-col-header uppercase">QUICK MESSAGE</h4>
+        <div class="footer-contact-block">
+          <form id="js-contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="email" id="contact-email" required placeholder="YOUR EMAIL" class="brutalist-input">
+            </div>
+            <div class="form-group">
+              <textarea id="contact-message" required placeholder="YOUR MESSAGE / INQUIRY" class="brutalist-textarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="contact-submit-btn">
+              SEND MESSAGE <span class="submit-btn-accent">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Massive Ghost Text Background Footer -->
+    <div class="footer-ghost-text uppercase" id="js-footer-ghost">ANKIT SHUKLA</div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="js-toast-container"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
